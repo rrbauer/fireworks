@@ -3,6 +3,7 @@
 // History:   2023-02-04    rrbauer   Created
 //            2023-02-12    rrbauer   Added fractional drawing (thanks davepl!), random particle fade
 //            2023-02-13    rrbauer   Added size element to Particle struct
+//            2023-12-19    rrbauer   Added multicolor explosions
 
 /** Notes
 Pick a random spot for the firework to explode, light it up, flicker, fade
