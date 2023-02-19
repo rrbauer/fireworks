@@ -72,13 +72,14 @@ void explode(unsigned int location) {
   int active_particles = num_particles;
   // float acceleration = -0.5;
   uint8_t hue = random8();
+  bool multicolor = random(5) == 0; // 1 in 5 will be multicolor
 
   // initialize particles array
   for (int i=0; i<num_particles; i++) {
     particles[i].size = random(1, 5);
     particles[i].location = location;
     particles[i].velocity = random(-500, 500) / 100.0;
-    particles[i].hue = hue;
+    particles[i].hue = (multicolor) ? random8() : hue;
     particles[i].value = 255;
     particles[i].fadeby = random(5, 15);
     particles[i].active = true;
